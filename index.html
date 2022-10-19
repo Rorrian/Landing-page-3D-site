@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>3D site</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="gallery">
+        <div class="frame">
+          <div class="frame__content">
+            <h2>Beautiful World</h2>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="frame__content">
+            <div
+              class="frame-media frame-media_left"
+              style="background-image: url(img/1.jpg)"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Чтобы на начальном экране не было видно слайды дальше 2 фото,
+				добавляем по классу "frame_bg" фон слайду -->
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <!-- С помощью атрибутов настроим бесконечное и беззвучное автовоспроизведение -->
+            <!-- Звук подключаем отдельно по кнопке -->
+            <video
+              class="frame-media frame-media_right"
+              src="media/video_optimized.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+        </div>
+
+        <!-- Чтобы увеличить расстояние между слайдами - добавляем пустой фрейм -->
+        <div class="frame"></div>
+
+        <div class="frame">
+          <div class="frame__content text-right">
+            <h3>Pure planet</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              aspernatur, veritatis est, quasi optio illum eligendi, voluptas
+              cupiditate nemo quis maxime deleniti reprehenderit delectus! Natus
+              quas ut rerum sunt nesciunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <div
+              class="frame-media frame-media_left"
+              style="background-image: url(img/2.jpg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="frame"></div>
+
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <div
+              class="frame-media frame-media_right"
+              style="background-image: url(img/3.jpg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="frame"></div>
+
+        <div class="frame">
+          <div class="frame__content text-left">
+            <h3>Ask mountains</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et
+              molestiae pariatur est, exercitationem expedita, perspiciatis quam
+              sit explicabo inventore aut? Aut voluptates quo laboriosam optio,
+              dolor adipisci! Vitae, maxime.
+            </p>
+          </div>
+        </div>
+
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <div
+              class="frame-media frame-media_right"
+              style="background-image: url(img/4.jpg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <video
+              class="frame-media frame-media_left"
+              src="media/video_optimized.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+        </div>
+
+        <div class="frame"></div>
+        <div class="frame"></div>
+
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <div
+              class="frame-media frame-media_right"
+              style="background-image: url(img/5.jpg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="frame frame_bg">
+          <div class="frame__content">
+            <video
+              class="frame-media"
+              src="media/video_optimized.mp4"
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+        </div>
+
+        <div class="frame"></div>
+        <div class="frame"></div>
+
+        <div class="frame">
+          <div class="frame__content">© Автор</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Кнопка для управлением воспроизведением отдельного аудио для видео -->
+    <!-- Класс для состояния паузы аудио "_paused" -->
+    <img class="sound-button _paused" src="img/sound.gif" alt="Alt" />
+    <audio class="audio" src="media/ambient.mp3" loop></audio>
+  </body>
+</html>
