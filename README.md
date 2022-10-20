@@ -3,8 +3,8 @@
 - 3D анимация скролла(модель движения слайдов в глубину)
 - Работа с аудио и видео контентом
 
-Deployment:
-
+Deployment:  
+https://rorrian.github.io/Landing-page-3D-site/
 ---
 
 <details>
